@@ -16,7 +16,7 @@
       </div>
     </div>
     <div v-if="isShown">
-      <table-row
+      <TableRow
         class="recursive-row"
         v-for="child in children"
         :key="child.id"

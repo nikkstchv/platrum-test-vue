@@ -7,14 +7,9 @@
       </div>
     </header>
     <main class="main">
-    <div v-for="row in sortedUsers">
-      <TableRow
-        v-if="!row.chief"
-        :key="row.id"
-        :row="row"
-      />
-    </div>
-
+      <div v-for="row in sortedUsers">
+        <TableRow v-if="!row.chief" :key="row.id" :row="row" />
+      </div>
     </main>
   </section>
 </template>
@@ -26,7 +21,7 @@ import { mapGetters } from "vuex";
 export default {
   name: "Table",
   components: [TableRow],
-  computed: mapGetters(['sortedUsers']),
+  computed: mapGetters(["sortedUsers"]),
   methods: {
     toggleSort(name) {
       this.$store.commit("toggleSort", name);
