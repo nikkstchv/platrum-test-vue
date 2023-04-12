@@ -82,6 +82,7 @@ export default {
 
 .expand-btn {
   border: 1px solid #ddd;
-  border-radius: 3px;
+  border-radius: 2px;
+  width: 21px;
 }
 </style>

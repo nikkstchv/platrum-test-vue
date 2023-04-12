@@ -57,10 +57,10 @@ export default {
         phone: this.phone,
         chief: this.chief
       });
-      this.isModalShow = false;
       this.name = null;
       this.phone = null;
       this.chief = null;
+      this.isModalShow = false;
     }
   }
 };
@@ -75,7 +75,7 @@ export default {
   border-radius: 8px;
   background-color: rgb(37, 137, 255);
   cursor: pointer;
-  transition: background-color linear 0.4s;
+  transition: background-color linear 0.2s;
 }
 .btn-save {
   width: 10em;
